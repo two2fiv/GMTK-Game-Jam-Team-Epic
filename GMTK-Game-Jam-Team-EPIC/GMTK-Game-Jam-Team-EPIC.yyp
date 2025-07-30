@@ -23,6 +23,7 @@
   },
   "name":"GMTK-Game-Jam-Team-EPIC",
   "resources":[
+    {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
     {"id":{"name":"okillblock","path":"objects/okillblock/okillblock.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
@@ -32,6 +33,7 @@
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"TitleScreen","path":"rooms/TitleScreen/TitleScreen.yy",},},
     {"id":{"name":"skillblock","path":"sprites/skillblock/skillblock.yy",},},
+    {"id":{"name":"sPlaceHolderBullet","path":"sprites/sPlaceHolderBullet/sPlaceHolderBullet.yy",},},
     {"id":{"name":"sPlaceHolderGun","path":"sprites/sPlaceHolderGun/sPlaceHolderGun.yy",},},
     {"id":{"name":"splayer","path":"sprites/splayer/splayer.yy",},},
     {"id":{"name":"sSolid","path":"sprites/sSolid/sSolid.yy",},},
