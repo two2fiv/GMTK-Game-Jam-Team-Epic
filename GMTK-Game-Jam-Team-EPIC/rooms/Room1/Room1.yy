@@ -13,8 +13,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"GMTK-Game-Jam-Team-EPIC",
+    "path":"GMTK-Game-Jam-Team-EPIC.yyp",
   },
   "parentRoom":null,
   "physicsSettings":{
