@@ -1,3 +1,5 @@
+global.playerX = x
+global.playerY = y
 
 ysp+=0.1
 xsp=0
