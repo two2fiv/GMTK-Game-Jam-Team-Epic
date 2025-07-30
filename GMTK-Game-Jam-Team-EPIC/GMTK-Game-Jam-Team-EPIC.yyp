@@ -35,6 +35,11 @@
   },
   "name":"GMTK-Game-Jam-Team-EPIC",
   "resources":[
+<<<<<<< Updated upstream
+=======
+    {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
+    {"id":{"name":"objectoftheepic","path":"objects/objectoftheepic/objectoftheepic.yy",},},
+>>>>>>> Stashed changes
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
