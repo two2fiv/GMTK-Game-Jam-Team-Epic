@@ -1,26 +1,33 @@
 global.playerX = x
 global.playerY = y
 
-ysp+=0.1
-xsp=0
+canJump = 0
 
 if keyboard_check(ord("A")){
-	xsp=-3
+	xsp-=2
 }
 
 if keyboard_check(ord("D")){
-	xsp=+3
+	xsp+=2
 }
 
-if place_meeting(x,y+1,oSolid)
+if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid)
 {
 	ysp=0
-	if keyboard_check(vk_space)
+	if not place_meeting(x,y-1,oSolid)
 	{
-		ysp=-4	
+		canJump = 1
 	}
 }
-
+if keyboard_check(vk_space) and canJump = 1
+	{
+		ysp=-6	
+	}
+if ysp < 0 {
+ysp+=0.18
+}
+else ysp+=0.24
+xsp*=.6
 
 move_and_collide(xsp,ysp,oSolid)
 
