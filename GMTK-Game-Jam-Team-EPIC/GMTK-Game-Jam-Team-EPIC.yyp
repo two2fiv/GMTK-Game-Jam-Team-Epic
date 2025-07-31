@@ -26,6 +26,8 @@
   "resources":[
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
     {"id":{"name":"oClone","path":"objects/oClone/oClone.yy",},},
+    {"id":{"name":"oCloneBullet","path":"objects/oCloneBullet/oCloneBullet.yy",},},
+    {"id":{"name":"oCloneGun","path":"objects/oCloneGun/oCloneGun.yy",},},
     {"id":{"name":"odoor","path":"objects/odoor/odoor.yy",},},
     {"id":{"name":"ofloor","path":"objects/ofloor/ofloor.yy",},},
     {"id":{"name":"oGun","path":"objects/oGun/oGun.yy",},},
@@ -48,6 +50,7 @@
     {"id":{"name":"sPlaceHolderGun","path":"sprites/sPlaceHolderGun/sPlaceHolderGun.yy",},},
     {"id":{"name":"splayer_1","path":"sprites/splayer_1/splayer_1.yy",},},
     {"id":{"name":"splayer_2","path":"sprites/splayer_2/splayer_2.yy",},},
+    {"id":{"name":"srecordingplayer","path":"sprites/srecordingplayer/srecordingplayer.yy",},},
     {"id":{"name":"sSolid","path":"sprites/sSolid/sSolid.yy",},},
     {"id":{"name":"sstartbutton","path":"sprites/sstartbutton/sstartbutton.yy",},},
     {"id":{"name":"stitle","path":"sprites/stitle/stitle.yy",},},

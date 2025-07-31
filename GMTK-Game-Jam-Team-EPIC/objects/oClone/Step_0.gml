@@ -36,6 +36,7 @@ else{
 	ysp = initYsp
 	xsp = initXsp
 	x = initX
+	y = initY
 	playbackIndex = 0
 }
 	

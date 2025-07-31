@@ -9,7 +9,7 @@ xsp = initXsp
 x = initX
 y = initY
 
-canJump = true
+canJump = false
 solids = [odoor, oSolid]
 
 input = 0

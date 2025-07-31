@@ -1,7 +1,7 @@
 
 
 canJump = 0
-
+global.roomreentry = 0
 
 if keyboard_check(ord("A")){
 	xsp-=2
@@ -14,7 +14,7 @@ if keyboard_check(ord("D")){
 if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid)
 {
 	ysp=0
-	if not place_meeting(x,y-1,oSolid) or canGrapple = 1
+	if not place_meeting(x,y-1,oSolid) or global.canGrapple = 1
 	{
 		canJump = 1
 	}
@@ -36,15 +36,16 @@ global.playerY = y
 if keyboard_check(vk_space){
 	if spaceHeld = 0{
 		if global.inputRecording == 0{
+			sprite_index = srecordingplayer
 			global.inputRecording = 1
 			global.initialX = x
 			global.initialY = y
 			global.initialYsp = ysp
 			global.initialXsp = xsp
 			spaceHeld = 1
-			
 		}
 		else{
+			sprite_index = splayer_1
 			global.inputRecording = 0
 			instance_create_layer(global.initialX,global.initialY,"player",oClone)
 			spaceHeld = 1
@@ -61,7 +62,7 @@ if global.inputRecording==1{
 		jump:keyboard_check(ord("W")),
 		down:keyboard_check(ord("S")),
 		right:keyboard_check(ord("D"))
-	}
+	}		
 array_push(global.input_list,input)
 }
 else{
@@ -80,13 +81,13 @@ if place_meeting(x,y,ENEMY)
 if place_meeting(x,y, roomchange)
 {
     room_goto_next()
-    alarm[1] = 5
+    //alarm[1] = 1 * room_speed
 }
 
 if place_meeting(x,y, roomchangeback)
 {
+	global.roomreentry = 1
     room_goto_previous()
-    alarm[2] = 5
 }
 
 
