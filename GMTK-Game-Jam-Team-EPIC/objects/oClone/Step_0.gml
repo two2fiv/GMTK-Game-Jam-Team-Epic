@@ -6,11 +6,11 @@ if (playbackIndex < initLength){
 	canJump = 0
 	
 	if input.left{
-		xsp-=2
+		xsp-=3
 	}
 
 	if input.right{
-		xsp+=2
+		xsp+=3	
 	}
 
 	if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid){

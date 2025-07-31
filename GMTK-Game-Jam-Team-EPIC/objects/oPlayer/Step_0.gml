@@ -4,17 +4,17 @@ canJump = 0
 global.roomreentry = 0
 
 if keyboard_check(ord("A")){
-	xsp-=2
+	xsp-=3
 }
 
 if keyboard_check(ord("D")){
-	xsp+=2
+	xsp+=3
 }
 
-if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid)
+if place_meeting(x,y+1,solids) or place_meeting(x,y-1,solids)
 {
 	ysp=0
-	if not place_meeting(x,y-1,oSolid) or global.canGrapple = 1
+	if not place_meeting(x,y-1,solids) or global.canGrapple = 1
 	{
 		canJump = 1
 	}

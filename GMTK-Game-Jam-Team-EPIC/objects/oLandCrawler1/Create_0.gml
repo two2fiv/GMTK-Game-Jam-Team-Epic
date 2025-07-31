@@ -1,0 +1,12 @@
+hp = 1
+damage = 1
+bspeed = 1.6
+xspd = 0
+yspd = 0
+d = 0
+canRotate = 1
+down = 0
+up = 0
+right = 0
+left = 0
+forward = 0
