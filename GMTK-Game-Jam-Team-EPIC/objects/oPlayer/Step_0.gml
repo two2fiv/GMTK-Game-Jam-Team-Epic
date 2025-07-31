@@ -47,6 +47,7 @@ if keyboard_check(vk_space){
 		else{
 			global.inputRecording = 0
 			instance_create_layer(global.initialX,global.initialY,"player",oClone)
+			spaceHeld = 1
 		}
 	}
 }

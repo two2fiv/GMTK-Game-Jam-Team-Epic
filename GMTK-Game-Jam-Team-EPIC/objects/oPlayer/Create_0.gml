@@ -1,7 +1,7 @@
 window_set_size(1280,720)
 xsp=0
 ysp=0
-canGrapple = 1
+global.canGrapple = 1
 
 canJump = true
 solids = [odoor, oSolid]

@@ -15,7 +15,7 @@ if (playbackIndex < initLength){
 
 	if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid){
 		ysp=0
-		if not place_meeting(x,y-1,oSolid) or canGrapple = 1{
+		if not place_meeting(x,y-1,solids) or global.canGrapple = 1{
 		canJump = 1
 		}
 	}
@@ -33,6 +33,9 @@ move_and_collide(xsp,ysp,oSolid)
 playbackIndex += 1
 }
 else{
-	instance_destroy()
+	ysp = initYsp
+	xsp = initXsp
+	x = initX
+	playbackIndex = 0
 }
 	

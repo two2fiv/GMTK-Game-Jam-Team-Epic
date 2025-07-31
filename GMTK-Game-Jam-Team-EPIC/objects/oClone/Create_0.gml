@@ -1,9 +1,13 @@
 playbackIndex = 0;
-xsp=global.initialXsp
-ysp=global.initialYsp
-x = global.initialX
-y = global.initialY
-canGrapple = 0
+initXsp=global.initialXsp
+initYsp=global.initialYsp
+initX = global.initialX
+initY = global.initialY
+
+ysp = initYsp
+xsp = initXsp
+x = initX
+y = initY
 
 canJump = true
 solids = [odoor, oSolid]
