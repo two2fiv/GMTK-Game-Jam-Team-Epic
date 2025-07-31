@@ -12,3 +12,5 @@ y+=yspd*2
 
 initialX=x
 initialY=y
+
+bRad = 400

@@ -1,51 +1,70 @@
-global.playerX = x
-global.playerY = y
 
-ysp+=0.1
-xsp=0
+
+canJump = 0
+
 
 if keyboard_check(ord("A")){
-	xsp=-3
+	xsp-=2
 }
 
 if keyboard_check(ord("D")){
-	xsp=+3
+	xsp+=2
 }
 
-if place_meeting(x,y+1,ofloor)
+if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid)
 {
 	ysp=0
-	if keyboard_check(vk_space) and canJump = true
+	if not place_meeting(x,y-1,oSolid) or canGrapple = 1
 	{
-		ysp=-4
+		canJump = 1
 	}
 }
-
-
-/*
-if keyboard_check(vk_space) and not place_meeting(x,y+1,ofloor){
-	canJump = true
-	alarm[0] = 60
+if keyboard_check(ord("W")) and canJump = 1
+	{
+		ysp=-5.4
+	}
+if ysp < 0 {
+ysp+=0.18
 }
-*/
+else ysp+=0.3
+xsp*=.6
 
+move_and_collide(xsp,ysp,solids)
+global.playerX = x
+global.playerY = y
 
-move_and_collide(xsp,ysp, solids)
-
-
-//FOR NEXT ROOM TRIGGER
-
-
-if place_meeting(x,y, roomchange)
-{
-	room_goto_next()
-	alarm[1] = 5
+if keyboard_check(vk_space){
+	if spaceHeld = 0{
+		if global.inputRecording == 0{
+			global.inputRecording = 1
+			global.initialX = x
+			global.initialY = y
+			global.initialYsp = ysp
+			global.initialXsp = xsp
+			spaceHeld = 1
+			
+		}
+		else{
+			global.inputRecording = 0
+			instance_create_layer(global.initialX,global.initialY,"player",oClone)
+		}
+	}
 }
-
-if place_meeting(x,y, roomchangeback)
-{
-	room_goto_previous()
-	alarm[2] = 5
+else{
+spaceHeld = 0	
+}
+//Input Recording
+if global.inputRecording==1{
+	var input = {
+		left:keyboard_check(ord("A")),
+		jump:keyboard_check(ord("W")),
+		down:keyboard_check(ord("S")),
+		right:keyboard_check(ord("D"))
+	}
+array_push(global.input_list,input)
+}
+else{
+	global.input_list = []
 }
 
 // FOR COLLISIONS WITH ENEMIES
@@ -57,7 +76,17 @@ if place_meeting(x,y,ENEMY)
 }
 
 */
+if place_meeting(x,y, roomchange)
+{
+    room_goto_next()
+    alarm[1] = 5
+}
 
+if place_meeting(x,y, roomchangeback)
+{
+    room_goto_previous()
+    alarm[2] = 5
+}
 
 
 if place_meeting(x,y,okillblock)

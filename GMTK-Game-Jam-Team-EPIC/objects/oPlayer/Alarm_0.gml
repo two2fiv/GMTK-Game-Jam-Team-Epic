@@ -1,1 +1,1 @@
-canJump = false
+canJump = 0
