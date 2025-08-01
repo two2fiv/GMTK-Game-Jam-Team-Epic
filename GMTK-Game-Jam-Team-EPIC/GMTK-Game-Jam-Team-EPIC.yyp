@@ -11,7 +11,6 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"backgrounds","folderPath":"folders/backgrounds.yy","name":"backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"TileSet","folderPath":"folders/TileSet.yy","name":"TileSet","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"music","folderPath":"folders/music.yy","name":"music","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/objects/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -31,6 +30,7 @@
     {"$GMFolder":"","%Name":"Geometry","folderPath":"folders/sprites/Geometry.yy","name":"Geometry","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Weapons","folderPath":"folders/sprites/Weapons.yy","name":"Weapons","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"TileSet","folderPath":"folders/TileSet.yy","name":"TileSet","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Title Screen","folderPath":"folders/Title Screen.yy","name":"Title Screen","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
