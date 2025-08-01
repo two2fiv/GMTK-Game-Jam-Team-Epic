@@ -54,6 +54,7 @@
     {"id":{"name":"sPlaceHolderGun","path":"sprites/sPlaceHolderGun/sPlaceHolderGun.yy",},},
     {"id":{"name":"splayer_1","path":"sprites/splayer_1/splayer_1.yy",},},
     {"id":{"name":"splayer_2","path":"sprites/splayer_2/splayer_2.yy",},},
+    {"id":{"name":"sPlayerHurt","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},},
     {"id":{"name":"srecordingplayer","path":"sprites/srecordingplayer/srecordingplayer.yy",},},
     {"id":{"name":"sSolid","path":"sprites/sSolid/sSolid.yy",},},
     {"id":{"name":"sstartbutton","path":"sprites/sstartbutton/sstartbutton.yy",},},

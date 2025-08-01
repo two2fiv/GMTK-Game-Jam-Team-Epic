@@ -69,15 +69,17 @@ else{
 	global.input_list = []
 }
 
-// FOR COLLISIONS WITH ENEMIES
-
-/*
-if place_meeting(x,y,ENEMY)
-{
-	room_restart()
+if place_meeting(x,y,enemies) and invulnerable = 0{
+	global.playerHP -= 1
+	invulnerable = 120
+	sprite_index = sPlayerHurt
 }
-
-*/
+if not invulnerable = 0{
+	invulnerable -=1	
+}
+else{
+	sprite_index = splayer_1	
+}
 if place_meeting(x,y, roomchange)
 {
     room_goto_next()

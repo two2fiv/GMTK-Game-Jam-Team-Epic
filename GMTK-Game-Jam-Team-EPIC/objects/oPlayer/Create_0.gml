@@ -5,8 +5,10 @@ global.canGrapple = 1
 
 canJump = false
 solids = [odoor, oSolid]
+enemies = [oAir1, oLandCrawler1]
 
 spaceHeld = 0
+invulnerable = 0
 
 if( !variable_global_exists("roomreentry")){
 	global.roomreentry = 0
@@ -21,3 +23,4 @@ global.playerY = y
 
 global.inputRecording = 0
 global.input_list = []
+global.playerHP = 8
