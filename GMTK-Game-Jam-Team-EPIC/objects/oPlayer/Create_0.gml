@@ -4,8 +4,8 @@ ysp=0
 global.canGrapple = 1
 
 canJump = false
-solids = [odoor, oSolid, overtdoor]
-enemies = [oAir1, oLandCrawler1]
+global.solids = [odoor, oSolid, overtdoor]
+global.enemies = [oAir1, oLandCrawler1]
 
 spaceHeld = 0
 invulnerable = 0
@@ -24,3 +24,5 @@ global.playerY = y
 global.inputRecording = 0
 global.input_list = []
 global.playerHP = 8
+
+global.killBullet = 0

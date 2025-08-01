@@ -29,3 +29,14 @@ if canAtk = 2{
 	canAtk = 1
 	}
 }
+
+if place_meeting(x,y,oBullet){
+	hp -= 1
+	if hp = 0 {
+	audio_play_sound(KillEnemy,1,0)	
+	instance_destroy()
+	}
+	else{
+	audio_play_sound(EnemyDamage,1,0)
+	}
+}

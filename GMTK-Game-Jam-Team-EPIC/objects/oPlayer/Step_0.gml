@@ -11,10 +11,10 @@ if keyboard_check(ord("D")){
 	xsp+=3
 }
 
-if place_meeting(x,y+1,solids) or place_meeting(x,y-1,solids)
+if place_meeting(x,y+1,global.solids) or place_meeting(x,y-1,global.solids)
 {
 	ysp=0
-	if not place_meeting(x,y-1,solids) or global.canGrapple = 1
+	if not place_meeting(x,y-1,global.solids) or global.canGrapple = 1
 	{
 		canJump = 1
 	}
@@ -29,7 +29,7 @@ ysp+=0.18
 else ysp+=0.3
 xsp*=.6
 
-move_and_collide(xsp,ysp,solids)
+move_and_collide(xsp,ysp,global.solids)
 global.playerX = x
 global.playerY = y
 
@@ -69,10 +69,11 @@ else{
 	global.input_list = []
 }
 
-if place_meeting(x,y,enemies) and invulnerable = 0{
+if place_meeting(x,y,global.enemies) and invulnerable = 0{
 	global.playerHP -= 1
 	invulnerable = 120
 	sprite_index = sPlayerHurt
+	audio_play_sound(looperhit,1,0)
 }
 if not invulnerable = 0{
 	invulnerable -=1	

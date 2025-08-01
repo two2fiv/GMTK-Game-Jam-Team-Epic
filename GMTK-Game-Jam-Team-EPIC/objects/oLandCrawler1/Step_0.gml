@@ -48,3 +48,15 @@ xspd=cos(degtorad(image_angle))
 yspd=sin(degtorad(image_angle))
 x+=xspd*bspeed
 y-=yspd*bspeed
+
+if place_meeting(x,y,oBullet) and global.killBullet = 0{
+	hp -= 1
+	global.killBullet = 1
+	if hp = 0 {
+	audio_play_sound(KillEnemy,1,0)	
+	instance_destroy()
+	}
+	else{
+	audio_play_sound(EnemyDamage,1,0)
+	}
+}

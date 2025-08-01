@@ -13,11 +13,13 @@ image_angle = angle
 
 if mouse_check_button_pressed(1) and canFire{
 	instance_create_layer(x,y,"weapons",oBullet)
+	audio_play_sound(Gunfired,1,0)
 	alarm[1] = 15
 }
 
 if mouse_check_button(1) and canFire{
 	instance_create_layer(x,y,"weapons",oBullet)
+	audio_play_sound(Gunfired,1,0)
 	canFire = false
 	alarm[0] = 30
 }
@@ -25,5 +27,5 @@ if mouse_check_button(1) and canFire{
 
 //canShoot+=1/gunSpeed
 
-x=global.playerX + 20
+x=global.playerX + 12
 y=global.playerY

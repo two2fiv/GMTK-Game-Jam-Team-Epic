@@ -3,6 +3,7 @@ ysp = 0
 bsp = 6
 atkg = 0
 canAtk = 1
+hp = 1
 
 detectRad = 300
 
