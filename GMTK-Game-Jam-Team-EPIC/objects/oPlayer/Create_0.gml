@@ -1,30 +1,30 @@
-window_set_size(1280,720)
-xsp=0
-ysp=0
-global.canGrapple = 1
+	window_set_size(1280,720)
+	xsp=0
+	ysp=0
+	global.canGrapple = 1
 
-canJump = false
-global.solids = [odoor, oSolid, overtdoor]
-global.enemies = [oAir1, oLandCrawler1]
+	canJump = false
+	global.solids = [odoor, oSolid, overtdoor]
+	global.enemies = [oAir1, oLandCrawler1]
 
-spaceHeld = 0
-invulnerable = 0
+	spaceHeld = 0
+	invulnerable = 0
 
-if( !variable_global_exists("roomreentry")){
-	global.roomreentry = 0
+	if( !variable_global_exists("roomreentry")){
+		global.roomreentry = 0
 	
-}
+	}
 
 
-sprite_index = sPlayer
+	sprite_index = sPlayer
 
-global.playerX = x
-global.playerY = y
+	global.playerX = x
+	global.playerY = y
 
-global.inputRecording = 0
-global.input_list = []
-global.playerHP = 8
+	global.inputRecording = 0
+	global.input_list = []
+	global.playerHP = 8
 
-global.killBullet = 0
+	global.killBullet = 0
 
-nextSprite = sPlayer
+	nextSprite = sPlayer
