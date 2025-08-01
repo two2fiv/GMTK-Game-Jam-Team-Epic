@@ -10,8 +10,8 @@
   "name":"oAir1",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Enemies",
+    "path":"folders/objects/Enemies.yy",
   },
   "parentObjectId":null,
   "persistent":false,

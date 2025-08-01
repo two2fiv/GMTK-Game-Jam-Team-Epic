@@ -11,8 +11,8 @@
   "name":"oGun",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Weapons",
+    "path":"folders/objects/Weapons.yy",
   },
   "parentObjectId":null,
   "persistent":false,

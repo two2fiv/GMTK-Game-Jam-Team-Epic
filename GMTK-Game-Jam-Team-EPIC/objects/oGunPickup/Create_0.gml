@@ -1,0 +1,10 @@
+if global.hasGun == 0{
+	sprite_index = sGunPickup
+}
+else{
+	sprite_index = sBeegGunPickup
+}
+ysp = -3
+yacc = .2
+image_xscale = 1.4
+image_yscale = 1.4

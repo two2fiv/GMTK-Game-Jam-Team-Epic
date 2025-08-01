@@ -1,4 +1,4 @@
-hp = 4
+hp = 1
 damage = 1
 bspeed = 1.6
 xspd = 0

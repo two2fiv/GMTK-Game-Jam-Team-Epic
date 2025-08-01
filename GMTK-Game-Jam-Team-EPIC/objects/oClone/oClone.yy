@@ -9,8 +9,8 @@
   "name":"oClone",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Player",
+    "path":"folders/objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

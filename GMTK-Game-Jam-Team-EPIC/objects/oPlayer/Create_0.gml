@@ -4,8 +4,7 @@ ysp=0
 
 
 canJump = false
-global.solids = [odoor, oSolid, overtdoor]
-global.enemies = [oAir1, oLandCrawler1]
+
 
 spaceHeld = 0
 invulnerable = 0
@@ -33,10 +32,9 @@ nextSprite = sPlayer
 
 global.canMove = 1
 
-if global.hasGun = 1{
+if global.hasGun != 0{
 	instance_create_layer(x,y,"weapons",oGun)
 }
-if global.canGrapple = 1 {
+if global.canGrapple == 1 {
 	instance_create_layer(x,y,"Pickups",oGrappleCollect)
 }
-instance_create_depth(x,y,0,oCamera)

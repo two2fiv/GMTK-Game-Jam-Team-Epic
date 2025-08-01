@@ -1,10 +1,3 @@
-camWidth = 760
-camHeight = 427.5
-
-follow = oPlayer
-
-xTo = x
-yTo = y
-
-x = follow.x
-y = follow.y
+gX = 0
+gY = 0
+spd = 0.01

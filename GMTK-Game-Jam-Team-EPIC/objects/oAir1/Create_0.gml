@@ -17,3 +17,5 @@ rpcX = 0
 rpcY = 0
 
 dp = 0
+
+atktmr = 0

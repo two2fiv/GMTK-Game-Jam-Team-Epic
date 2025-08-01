@@ -4,17 +4,22 @@ canJump = 0
 global.roomreentry = 0
 
 if keyboard_check(ord("A")){
-	xsp-=3
+	xsp-=1.8
+	image_xscale = -1
 }
 
 if keyboard_check(ord("D")){
-	xsp+=3
+	xsp+=1.8
+	image_xscale = 1
+	
 }
 
-if place_meeting(x,y+1,global.solids) or place_meeting(x,y-1,global.solids)
+move_and_collide(xsp,ysp,global.solids)
+
+if place_meeting(x,y+abs(ysp),global.solids) or place_meeting(x,y-abs(ysp),global.solids)
 {
 	ysp=0
-	if not place_meeting(x,y-1,global.solids) or global.canGrapple = 1
+	if place_meeting(x,y+1,global.solids) or global.canGrapple = 1
 	{
 		canJump = 1
 	}
@@ -29,7 +34,14 @@ ysp+=0.18
 else ysp+=0.3
 xsp*=.6
 
-move_and_collide(xsp,ysp,global.solids)
+
+	
+	
+
+
+		
+
+
 
 
 if keyboard_check(vk_space){
@@ -89,7 +101,7 @@ if place_meeting(x,y,global.enemies) and invulnerable = 0{
 	else{
 	sprite_index = sRecordingHurt
 	}
-	audio_play_sound(looperhit,1,0)
+	audio_play_sound(sfxLooperhit,1,0)
 }
 if not invulnerable = 0{
 	invulnerable -=1	

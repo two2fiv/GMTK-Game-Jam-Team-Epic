@@ -1,1 +1,1 @@
-canAtk = 1
+atktmr+=1

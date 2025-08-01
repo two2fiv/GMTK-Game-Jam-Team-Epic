@@ -10,8 +10,8 @@
   "name":"odoor",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Geometry",
+    "path":"folders/objects/Geometry.yy",
   },
   "parentObjectId":null,
   "persistent":false,

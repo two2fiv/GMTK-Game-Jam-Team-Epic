@@ -9,8 +9,8 @@
   "name":"oBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"Weapons",
+    "path":"folders/objects/Weapons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlaceHolderBullet",
-    "path":"sprites/sPlaceHolderBullet/sPlaceHolderBullet.yy",
+    "name":"sBullet",
+    "path":"sprites/sBullet/sBullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

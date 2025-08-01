@@ -20,3 +20,4 @@ initLength = array_length(input_list)
 
 global.cloneCount += 1
 cloneIndex = global.cloneCount
+cloneLimit = 2
