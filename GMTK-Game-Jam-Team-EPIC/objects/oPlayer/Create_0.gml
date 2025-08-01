@@ -39,3 +39,4 @@ if global.hasGun = 1{
 if global.canGrapple = 1 {
 	instance_create_layer(x,y,"Pickups",oGrappleCollect)
 }
+instance_create_depth(x,y,0,oCamera)

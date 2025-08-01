@@ -36,6 +36,7 @@
     {"id":{"name":"customroomchange","path":"objects/customroomchange/customroomchange.yy",},},
     {"id":{"name":"oAir1","path":"objects/oAir1/oAir1.yy",},},
     {"id":{"name":"oBullet","path":"objects/oBullet/oBullet.yy",},},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oClone","path":"objects/oClone/oClone.yy",},},
     {"id":{"name":"oCrossHair","path":"objects/oCrossHair/oCrossHair.yy",},},
     {"id":{"name":"odoor","path":"objects/odoor/odoor.yy",},},
