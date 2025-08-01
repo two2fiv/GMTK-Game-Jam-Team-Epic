@@ -17,3 +17,6 @@ input = 0
 input_list = global.input_list
 
 initLength = array_length(input_list)
+
+global.cloneCount += 1
+cloneIndex = global.cloneCount

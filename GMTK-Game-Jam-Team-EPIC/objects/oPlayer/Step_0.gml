@@ -1,4 +1,4 @@
-
+if global.canMove == 1{
 
 canJump = 0
 global.roomreentry = 0
@@ -30,25 +30,36 @@ else ysp+=0.3
 xsp*=.6
 
 move_and_collide(xsp,ysp,global.solids)
-global.playerX = x
-global.playerY = y
+
 
 if keyboard_check(vk_space){
 	if spaceHeld = 0{
 		if global.inputRecording == 0{
-			sprite_index = srecordingplayer
+			if sprite_index == sPlayer{
+				sprite_index = sRecording
+			}
+			else{
+				sprite_index = sRecordingHurt	
+			}
 			global.inputRecording = 1
 			global.initialX = x
 			global.initialY = y
 			global.initialYsp = ysp
 			global.initialXsp = xsp
 			spaceHeld = 1
+			nextSprite = sRecording
 		}
 		else{
-			sprite_index = splayer_1
+			if sprite_index == sRecording{
+			sprite_index = sPlayer
+			}
+			else{
+			sprite_index = sPlayerHurt	
+			}
 			global.inputRecording = 0
 			instance_create_layer(global.initialX,global.initialY,"player",oClone)
 			spaceHeld = 1
+			nextSprite = sPlayer
 		}
 	}
 }
@@ -72,14 +83,24 @@ else{
 if place_meeting(x,y,global.enemies) and invulnerable = 0{
 	global.playerHP -= 1
 	invulnerable = 120
+	if nextSprite = sPlayer{
 	sprite_index = sPlayerHurt
+	}
+	else{
+	sprite_index = sRecordingHurt
+	}
 	audio_play_sound(looperhit,1,0)
 }
 if not invulnerable = 0{
 	invulnerable -=1	
-}
-else{
-	sprite_index = splayer_1	
+	if invulnerable = 0{
+		if nextSprite = sPlayer{
+			sprite_index = sPlayer
+		}
+		else{
+			sprite_index = sRecording
+		}
+	}
 }
 if place_meeting(x,y, roomchange)
 {
@@ -97,4 +118,9 @@ if place_meeting(x,y, roomchangeback)
 if place_meeting(x,y,okillblock)
 {
 	room_restart()
+}
+
+global.playerX = x
+global.playerY = y
+
 }

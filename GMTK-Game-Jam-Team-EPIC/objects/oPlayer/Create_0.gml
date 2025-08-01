@@ -1,7 +1,7 @@
 window_set_size(1280,720)
 xsp=0
 ysp=0
-global.canGrapple = 1
+
 
 canJump = false
 global.solids = [odoor, oSolid, overtdoor]
@@ -16,7 +16,7 @@ if( !variable_global_exists("roomreentry")){
 }
 
 
-sprite_index = splayer_1
+sprite_index = sPlayer
 
 global.playerX = x
 global.playerY = y
@@ -26,3 +26,16 @@ global.input_list = []
 global.playerHP = 8
 
 global.killBullet = 0
+
+global.cloneCount = 0
+
+nextSprite = sPlayer
+
+global.canMove = 1
+
+if global.hasGun = 1{
+	instance_create_layer(x,y,"weapons",oGun)
+}
+if global.canGrapple = 1 {
+	instance_create_layer(x,y,"Pickups",oGrappleCollect)
+}

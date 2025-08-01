@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlaceHolderGun",
-    "path":"sprites/sPlaceHolderGun/sPlaceHolderGun.yy",
+    "name":"sGun",
+    "path":"sprites/sGun/sGun.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,7 +1,12 @@
 x+=xspd
 y+=yspd
+image_angle += 10
 
-if sqrt((x-initialX)*(x-initialX)+(y-initialY)*(y-initialY))>=bRad or place_meeting(x,y,oSolid){
+rix = x-initialX
+riy = y-initialY
+initdist = sqrt(riy*riy+rix*rix)
+
+if initdist>=bRad or place_meeting(x,y,oSolid){
 	instance_destroy()
 }
 

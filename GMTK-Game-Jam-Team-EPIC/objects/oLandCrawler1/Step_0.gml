@@ -1,3 +1,4 @@
+if global.canMove == 1{
 function getFloor(){
 	if place_meeting(x-1,y,oSolid){
 		left = 1
@@ -59,4 +60,5 @@ if place_meeting(x,y,oBullet) and global.killBullet = 0{
 	else{
 	audio_play_sound(EnemyDamage,1,0)
 	}
+}
 }

@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"splayer_1",
-    "path":"sprites/splayer_1/splayer_1.yy",
+    "name":"sPlayer",
+    "path":"sprites/sPlayer/sPlayer.yy",
   },
   "spriteMaskId":null,
   "visible":true,

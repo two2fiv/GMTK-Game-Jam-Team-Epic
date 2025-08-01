@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"sPlayerHurt",
-  "bboxMode":0,
-  "bbox_bottom":62,
+  "bboxMode":1,
+  "bbox_bottom":63,
   "bbox_left":0,
-  "bbox_right":28,
+  "bbox_right":31,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,

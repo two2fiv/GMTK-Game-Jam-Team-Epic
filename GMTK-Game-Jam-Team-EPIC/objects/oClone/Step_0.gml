@@ -1,4 +1,4 @@
-
+if global.canMove == 1{
 if (playbackIndex < initLength){
 	
 	input = input_list[playbackIndex]
@@ -39,4 +39,19 @@ else{
 	y = initY
 	playbackIndex = 0
 }
-	
+
+if global.cloneCount > 1{
+	if cloneIndex = 1{
+		global.cloneCount -= 1
+		instance_destroy()
+	}
+	else{
+		cloneIndex -= 1	
+	}
+}
+
+if position_meeting(x,y,global.enemies){
+	global.cloneCount -= 1
+	instance_destroy(oClone)
+}
+}

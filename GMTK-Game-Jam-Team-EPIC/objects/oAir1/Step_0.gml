@@ -1,3 +1,5 @@
+if global.canMove == 1{
+
 rpX = x-global.playerX
 rpY = y-global.playerY
 if sqrt(rpX*rpX+rpY*rpY)<=detectRad and canAtk = 1 {
@@ -39,4 +41,5 @@ if place_meeting(x,y,oBullet){
 	else{
 	audio_play_sound(EnemyDamage,1,0)
 	}
+}
 }

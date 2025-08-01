@@ -1,6 +1,6 @@
 rmx = mouse_x-x
 rmy = mouse_y-y
-bspeed=8
+bspeed=12
 angle = arctan2(rmx,rmy)
 
 angle = radtodeg(angle)-90
@@ -13,4 +13,9 @@ y+=yspd*2
 initialX=x
 initialY=y
 
-bRad = 400
+rix = x-initialX
+riy = y-initialY
+
+initdist = 0
+
+bRad = 800

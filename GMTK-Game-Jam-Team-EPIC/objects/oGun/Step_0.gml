@@ -1,3 +1,4 @@
+if global.canMove == 1{
 rmx = mouse_x-x
 rmy = mouse_y-y
 
@@ -29,3 +30,5 @@ if mouse_check_button(1) and canFire{
 
 x=global.playerX + 12
 y=global.playerY
+
+}
