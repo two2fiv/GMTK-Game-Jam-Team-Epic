@@ -4,7 +4,7 @@ ysp=0
 global.canGrapple = 1
 
 canJump = false
-solids = [odoor, oSolid]
+solids = [odoor, oSolid, overtdoor]
 enemies = [oAir1, oLandCrawler1]
 
 spaceHeld = 0

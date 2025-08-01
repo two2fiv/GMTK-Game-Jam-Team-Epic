@@ -1,0 +1,1 @@
+audio_play_sound(ambience, 10, true, 0.5)

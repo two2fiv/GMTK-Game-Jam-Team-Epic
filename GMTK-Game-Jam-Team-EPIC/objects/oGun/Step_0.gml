@@ -25,5 +25,5 @@ if mouse_check_button(1) and canFire{
 
 //canShoot+=1/gunSpeed
 
-x=global.playerX
+x=global.playerX + 20
 y=global.playerY
