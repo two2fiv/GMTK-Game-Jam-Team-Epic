@@ -5,7 +5,7 @@ atkg = 0
 canAtk = 1
 hp = 1
 
-detectRad = 300
+detectRad = 177
 
 rpX = 0
 rpY = 0

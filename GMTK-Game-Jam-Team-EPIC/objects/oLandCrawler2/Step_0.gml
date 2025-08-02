@@ -11,41 +11,102 @@ function getFloor(delta){
 		down = 1
 	}
 	else down = 0	
+	if place_meeting(x+delta+xsp,y,global.solids){
+		forward = 1	
+	}
+	else{
+		forward = 0	
+	}
+	
+	
+	
 	near = left+right+down
 }
 
 if global.canMove = 1{
 	
+	canJump = 0
+	
 	rpx = x-global.playerX
 	rpy = y-global.playerY
 	d = sqrt(rpx*rpx+rpy*rpy)
 	
-	if d<400{
-	phase = 1	
+	if d<chaseRadius{
+		phase = 1	
+		sprite_index = LandCrawler2Phased
 	}
 	else{
-	phase = 0	
+		phase = 0	
+		sprite_index = LandCrawler2Unphased
 	}	
 	
-	if phase = 0{
-		getFloor(0)
-
-		if place_meeting(x+xsp,y,global.solids) xor near = 0{
-
-			xsp*=-1
-			image_xscale *=-1	
-		}
-		x+=xsp
-	}
-if keyboard_check(ord("W")) and canJump = 1
-	{
-		ysp=-5.4
-	}
-if ysp < 0 {
-ysp+=0.18
-}
-else ysp+=0.3
-xsp*=.6
+	jump = 0
 	
+	if phase = 0{
+		getFloor(4)
+		if place_meeting(x+xsp,y,global.solids) or near = 0{
+			image_xscale *=-1	
+				}
+		x+=1.4*image_xscale
+		move_and_collide(0,ysp,global.solids)
+	}
+			
+	if phase = 1{
+		getFloor(32)
+		
+		if forward == 1 or near == 1{
+			jump = 1	
+		}
+		if abs(rpx)>changeRadius{
+			if rpx > 0{
+				move = -1
+			}
+			else{
+				move = 1	
+			}
+		}
+		if move == -1{
+			xsp-=1.6
+			image_xscale = -1
+		}
+		if move == 1{
+			xsp+=1.6
+			image_xscale = 1
+	
+		}
+		move_and_collide(xsp,ysp,global.solids)
+		
+	}
+
+		
+
+		if place_meeting(x,y+abs(ysp),global.solids) or place_meeting(x,y-abs(ysp),global.solids)
+		{
+			ysp=0
+			if place_meeting(x,y+1,global.solids) or global.canGrapple = 1
+			{
+				canJump = 1
+			}
+		}
+		if jump = 1 and canJump = 1
+			{
+				ysp=-5.4
+			}
+		if ysp < 0 {
+			ysp+=0.18
+		}
+		else ysp+=0.3
+		xsp*=.6
 }
 
+if place_meeting(x,y,oBullet) and global.killBullet = 0{
+	hp -= 1
+	global.killBullet = 1
+	if hp = 0 {
+	audio_play_sound(sfxKillEnemy,1,0)	
+	instance_destroy()
+	}
+	else{
+	audio_play_sound(sfxEnemyDamage,1,0)
+	}
+}

@@ -3,13 +3,13 @@ rmx = 0
 rmy = 0
 
 
+
 gunSpeed=1
 canShoot=1
+
 //gunSpeed=1
 //canShoot=0
 canFire = true
-
-trueangle = 0
 
 global.bulletIdx = 0
 

@@ -3,12 +3,19 @@ if global.canMove == 1{
 canJump = 0
 global.roomreentry = 0
 
-if keyboard_check(ord("A")){
+if keyboard_check_pressed(ord("W")){
+w=1	
+}
+else{
+w=0	
+}
+
+if keyboard_check(ord("A")) and isAccell == 0  or isAccell = -1{
 	xsp-=1.8
 	image_xscale = -1
 }
 
-if keyboard_check(ord("D")){
+if keyboard_check(ord("D")) and isAccell == 0 or isAccell == 1{
 	xsp+=1.8
 	image_xscale = 1
 	
@@ -42,10 +49,10 @@ if ysp < 0 {
 ysp+=0.18
 }
 else ysp+=0.3
-xsp*=.6
+xsp*=pFriction
 
 
-	
+
 	
 
 
