@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"AnimatedPlayerHeadFirstFight",
+  "%Name":"DeathBullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"AnimatedPlayerHeadFirstFight",
+  "name":"DeathBullet",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/FirstFightAnimation/Player.yy",
+    "name":"FinalBoss",
+    "path":"folders/FirstFightAnimation/FinalBoss.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerHead",
-    "path":"sprites/PlayerHead/PlayerHead.yy",
+    "name":"DeathBulletSprite",
+    "path":"sprites/DeathBulletSprite/DeathBulletSprite.yy",
   },
   "spriteMaskId":null,
   "visible":true,

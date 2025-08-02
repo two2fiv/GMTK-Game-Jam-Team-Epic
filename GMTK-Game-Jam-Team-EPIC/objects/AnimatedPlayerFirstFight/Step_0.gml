@@ -11,7 +11,7 @@ if wait = 0{
 			wait = 1
 			alarm[1] = 10
 			sprite_index = HeadlessArmDown
-			instance_create_layer(x,y,"moving",AnimatedPlayerHeadFirstFight)
+			instance_create_depth(x,y,250,AnimatedPlayerHeadFirstFight)
 		}
 
 	}
@@ -19,5 +19,11 @@ if wait = 0{
 		state = 3
 		wait = 1
 		alarm[1]=10
+	}
+	if FinalBossAnimation.phase == 3{
+		sprite_index = HeadlessPlayer
+		if !instance_exists(AnimatedGun){
+			instance_create_depth(186,324,350,AnimatedGun)	
+		}
 	}
 }

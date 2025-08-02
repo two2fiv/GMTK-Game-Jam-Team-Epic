@@ -2,6 +2,7 @@ global.canGrapple = 1
 global.hasGun = 2
 global.hasWallJump = 1
 global.canClone = 1
+global.bulletIdx = 0
 
 global.buttonsDown = 0
 global.buttonGoal = 0

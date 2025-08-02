@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"AnimatedPlayerHeadFirstFight",
+  "%Name":"FinalBossAnimation",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"AnimatedPlayerHeadFirstFight",
+  "name":"FinalBossAnimation",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/FirstFightAnimation/Player.yy",
+    "name":"FinalBoss",
+    "path":"folders/FirstFightAnimation/FinalBoss.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerHead",
-    "path":"sprites/PlayerHead/PlayerHead.yy",
+    "name":"FinalBossPlaceHolder",
+    "path":"sprites/FinalBossPlaceHolder/FinalBossPlaceHolder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"AnimatedPlayerHeadFirstFight",
+  "%Name":"AnimatedBullet",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"AnimatedPlayerHeadFirstFight",
+  "name":"AnimatedBullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerHead",
-    "path":"sprites/PlayerHead/PlayerHead.yy",
+    "name":"sBullet",
+    "path":"sprites/sBullet/sBullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,

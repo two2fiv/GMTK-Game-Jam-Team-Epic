@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"AnimatedPlayerHeadFirstFight",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"cloneIndicateDisperse",
+  "eventList":[],
   "managed":true,
-  "name":"AnimatedPlayerHeadFirstFight",
+  "name":"cloneIndicateDisperse",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerHead",
-    "path":"sprites/PlayerHead/PlayerHead.yy",
+    "name":"shirt_1",
+    "path":"sprites/shirt_1/shirt_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
