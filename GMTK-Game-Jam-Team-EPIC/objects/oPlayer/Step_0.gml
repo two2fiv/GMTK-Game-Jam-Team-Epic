@@ -1,58 +1,155 @@
-global.playerX = x
-global.playerY = y
+if global.canMove == 1{
 
 canJump = 0
+global.roomreentry = 0
 
-if keyboard_check(ord("A")){
-	xsp-=2
+if keyboard_check_pressed(ord("W")){
+w=1	
+}
+else{
+w=0	
 }
 
-if keyboard_check(ord("D")){
-	xsp+=2
+if keyboard_check(ord("A")) and isAccell == 0  or isAccell = -1{
+	xsp-=1.8
+	image_xscale = -1
 }
 
-if place_meeting(x,y+1,oSolid) or place_meeting(x,y-1,oSolid)
+if keyboard_check(ord("D")) and isAccell == 0 or isAccell == 1{
+	xsp+=1.8
+	image_xscale = 1
+	
+}
+
+move_and_collide(xsp,ysp,global.solids)
+
+if place_meeting(x,y+abs(ysp),global.solids) or place_meeting(x,y-abs(ysp),global.solids)
 {
 	ysp=0
-	if not place_meeting(x,y-1,oSolid)
+	if place_meeting(x,y+1,global.solids) or global.canGrapple = 1
 	{
 		canJump = 1
 	}
 }
-if keyboard_check(vk_space) and canJump = 1
+if keyboard_check(ord("W")) and canJump = 1
 	{
-		ysp=-6	
+		ysp=-5.4
 	}
+if global.hasWallJump = 1{
+	canWallJump()
+	if w == 1 and cnWlJmp = 1 {
+		ysp = -5.4	
+		pFriction = 0.84
+		alarm[3] = 10
+		isAccell = nextX
+	}
+}
+	
 if ysp < 0 {
 ysp+=0.18
 }
-else ysp+=0.24
-xsp*=.6
+else ysp+=0.3
+xsp*=pFriction
 
-move_and_collide(xsp,ysp,oSolid)
 
-//FOR NEXT ROOM TRIGGER
 
-/*
-if place_meeting(x,y,TRIGGER)
-{
-	room_goto_next()
+	
+
+
+		
+
+
+
+
+if keyboard_check(vk_space){
+	if spaceHeld = 0{
+		if global.inputRecording == 0{
+			if sprite_index == sPlayer{
+				sprite_index = sRecording
+			}
+			else{
+				sprite_index = sRecordingHurt	
+			}
+			global.inputRecording = 1
+			global.initialX = x
+			global.initialY = y
+			global.initialYsp = ysp
+			global.initialXsp = xsp
+			spaceHeld = 1
+			nextSprite = sRecording
+		}
+		else{
+			if sprite_index == sRecording{
+			sprite_index = sPlayer
+			}
+			else{
+			sprite_index = sPlayerHurt	
+			}
+			global.inputRecording = 0
+			instance_create_layer(global.initialX,global.initialY,"player",oClone)
+			spaceHeld = 1
+			nextSprite = sPlayer
+		}
+	}
 }
-*/
-
-// FOR COLLISIONS WITH ENEMIES
-
-/*
-if place_meeting(x,y,ENEMY)
-{
-	room_restart()
+else{
+spaceHeld = 0	
+}
+//Input Recording
+if global.inputRecording==1{
+	var input = {
+		left:keyboard_check(ord("A")),
+		jump:keyboard_check(ord("W")),
+		down:keyboard_check(ord("S")),
+		right:keyboard_check(ord("D"))
+	}		
+array_push(global.input_list,input)
+}
+else{
+	global.input_list = []
 }
 
-*/
+if place_meeting(x,y,global.enemies) and invulnerable = 0{
+	global.playerHP -= 1
+	invulnerable = 120
+	if nextSprite = sPlayer{
+	sprite_index = sPlayerHurt
+	}
+	else{
+	sprite_index = sRecordingHurt
+	}
+	audio_play_sound(sfxLooperhit,1,0)
+}
+if not invulnerable = 0{
+	invulnerable -=1	
+	if invulnerable = 0{
+		if nextSprite = sPlayer{
+			sprite_index = sPlayer
+		}
+		else{
+			sprite_index = sRecording
+		}
+	}
+}
+if place_meeting(x,y, roomchange)
+{
+    room_goto_next()
+    //alarm[1] = 1 * room_speed
+}
 
+if place_meeting(x,y, roomchangeback)
+{
+	global.roomreentry = 1
+    room_goto_previous()
+}
 
 
 if place_meeting(x,y,okillblock)
 {
 	room_restart()
+}
+
+global.playerX = x
+global.playerY = y
+
 }
