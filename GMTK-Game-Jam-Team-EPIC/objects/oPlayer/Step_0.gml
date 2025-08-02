@@ -155,6 +155,20 @@ if not invulnerable = 0{
 		}
 	}
 }
+
+if global.playerHP = 0 {
+	if global.spawnpoint = 1{
+		room_goto(Room1)
+	}
+	if global.spawnpoint = 2{
+		room_goto(Room5)
+	}
+	if global.spawnpoint = 3{
+		
+	}
+	global.playerHP = 8
+}
+
 if place_meeting(x,y, roomchange)
 {
     room_goto_next()

@@ -54,6 +54,7 @@ global.inputMouseY = []
 global.inputClickPress = []
 global.inputClickHold = []
 global.playerHP = 8
+global.spawnpoint = 1
 
 global.killBullet = 0
 
