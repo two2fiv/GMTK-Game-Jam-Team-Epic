@@ -3,6 +3,7 @@ xsp=0
 ysp=0
 
 
+
 canJump = false
 
 
@@ -16,6 +17,11 @@ if( !variable_global_exists("roomreentry")){
 
 
 sprite_index = sPlayer
+
+global.playerX = x
+global.playerY = y
+
+canJump = 0
 
 global.playerX = x
 global.playerY = y

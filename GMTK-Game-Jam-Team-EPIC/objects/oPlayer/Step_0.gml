@@ -28,6 +28,16 @@ if keyboard_check(ord("W")) and canJump = 1
 	{
 		ysp=-5.4
 	}
+if global.hasWallJump = 1{
+	canWallJump()
+	if w == 1 and cnWlJmp = 1 {
+		ysp = -5.4	
+		pFriction = 0.84
+		alarm[3] = 10
+		isAccell = nextX
+	}
+}
+	
 if ysp < 0 {
 ysp+=0.18
 }
