@@ -6,6 +6,6 @@ if global.roomreentry == 1 {
 
 if global.roomreentry == 2{
 	oPlayer.x =	501
-	oPlayer.y = 52
+	oPlayer.y = 85
 	global.roomreentry = 0
 }
