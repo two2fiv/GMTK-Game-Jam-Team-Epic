@@ -47,18 +47,24 @@ global.playerX = x
 global.playerY = y
 
 global.inputRecording = 0
-global.input_list = []
+global.inputX = []
+global.inputY = []
+global.inputMouseX = []
+global.inputMouseY = []
+global.inputClickPress = []
+global.inputClickHold = []
 global.playerHP = 8
 
 global.killBullet = 0
 
 global.cloneCount = 0
+global.cloneGunCount = 0
 
 w = 0
 
 nextSprite = sPlayer
 
-global.canMove = 1
+
 
 if global.hasGun != 0{
 	instance_create_layer(x,y,"weapons",oGun)

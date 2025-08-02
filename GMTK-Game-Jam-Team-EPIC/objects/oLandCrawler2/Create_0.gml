@@ -2,7 +2,7 @@ xsp = 1.4
 ysp = 0
 canJump = 1
 
-hp = 4
+hp = 2
 damage = 3
 
 phase = 0
@@ -16,3 +16,5 @@ jump = 0
 
 changeRadius = 50
 chaseRadius = 196
+
+invulnerable = 0

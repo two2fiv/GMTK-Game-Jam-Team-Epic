@@ -1,4 +1,4 @@
-playbackIndex = 0;
+playbackIndex = 0
 initXsp=global.initialXsp
 initYsp=global.initialYsp
 initX = global.initialX
@@ -10,14 +10,12 @@ x = initX
 y = initY
 
 canJump = false
-solids = [odoor, oSolid]
 
-input = 0
+inputX = global.inputX
+inputY = global.inputY
 
-input_list = global.input_list
-
-initLength = array_length(input_list)
+initLength = array_length(inputX)
 
 global.cloneCount += 1
 cloneIndex = global.cloneCount
-cloneLimit = 2
+cloneLimit = 1

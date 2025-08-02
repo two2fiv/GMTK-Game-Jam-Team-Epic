@@ -1,4 +1,4 @@
-if place_meeting(odoor.x,odoor.y,oBullet){
+if place_meeting(odoor.x,odoor.y,global.bullets){
 	sprite_index = sdooropen
 	open = true
 	alarm[0] = 60

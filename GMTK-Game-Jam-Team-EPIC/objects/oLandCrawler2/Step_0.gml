@@ -47,7 +47,7 @@ if global.canMove = 1{
 		if place_meeting(x+xsp,y,global.solids) or near = 0{
 			image_xscale *=-1	
 				}
-		x+=1.4*image_xscale
+		x+=image_xscale
 		move_and_collide(0,ysp,global.solids)
 	}
 			
@@ -66,11 +66,11 @@ if global.canMove = 1{
 			}
 		}
 		if move == -1{
-			xsp-=1.6
+			xsp-=1.3
 			image_xscale = -1
 		}
 		if move == 1{
-			xsp+=1.6
+			xsp+=1.3
 			image_xscale = 1
 	
 		}
@@ -99,14 +99,16 @@ if global.canMove = 1{
 		xsp*=.6
 }
 
-if place_meeting(x,y,oBullet) and global.killBullet = 0{
-	hp -= 1
-	global.killBullet = 1
-	if hp = 0 {
-	audio_play_sound(sfxKillEnemy,1,0)	
-	instance_destroy()
-	}
-	else{
-	audio_play_sound(sfxEnemyDamage,1,0)
-	}
-}
+			if place_meeting(x,y,global.bullets) and invulnerable = 0{
+				hp -= 1
+				invulnerable = 15
+				if hp == 0{
+					audio_play_sound(sfxKillEnemy,1,0)
+				instance_destroy()	
+				}
+				audio_play_sound(sfxLooperhit,1,0)
+			}
+			if not invulnerable = 0{
+				invulnerable -=1	
+				}
+			

@@ -41,7 +41,7 @@ if global.canMove == 1{
 		canAtk = 1 
 	}
 
-	if place_meeting(x,y,oBullet){
+	if place_meeting(x,y,global.bullets){
 		hp -= 1
 		if hp = 0 {
 		audio_play_sound(sfxKillEnemy,1,0)	

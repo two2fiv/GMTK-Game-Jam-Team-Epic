@@ -1,0 +1,1 @@
+canJump = 0

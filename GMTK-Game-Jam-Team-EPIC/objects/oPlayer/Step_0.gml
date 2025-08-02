@@ -10,6 +10,8 @@ else{
 w=0	
 }
 
+
+
 if keyboard_check(ord("A")) and isAccell == 0  or isAccell = -1{
 	xsp-=1.8
 	image_xscale = -1
@@ -18,8 +20,16 @@ if keyboard_check(ord("A")) and isAccell == 0  or isAccell = -1{
 if keyboard_check(ord("D")) and isAccell == 0 or isAccell == 1{
 	xsp+=1.8
 	image_xscale = 1
-	
 }
+if global.hasGun > 0{
+	if mouse_x > x {
+		image_xscale = 1
+	}
+	else{
+		image_xscale = -1
+	}
+}
+
 
 move_and_collide(xsp,ysp,global.solids)
 
@@ -61,7 +71,7 @@ xsp*=pFriction
 
 
 
-if keyboard_check(vk_space){
+if keyboard_check(vk_space) and global.canClone{
 	if spaceHeld = 0{
 		if global.inputRecording == 0{
 			if sprite_index == sPlayer{
@@ -87,6 +97,7 @@ if keyboard_check(vk_space){
 			}
 			global.inputRecording = 0
 			instance_create_layer(global.initialX,global.initialY,"player",oClone)
+			instance_create_layer(global.initialX,global.initialY,"Weapons",oGunClone)
 			spaceHeld = 1
 			nextSprite = sPlayer
 		}
@@ -97,16 +108,29 @@ spaceHeld = 0
 }
 //Input Recording
 if global.inputRecording==1{
-	var input = {
-		left:keyboard_check(ord("A")),
-		jump:keyboard_check(ord("W")),
-		down:keyboard_check(ord("S")),
-		right:keyboard_check(ord("D"))
-	}		
-array_push(global.input_list,input)
+
+	array_push(global.inputX,x)
+	array_push(global.inputY,y)
+	array_push(global.inputMouseX,mouse_x)
+	array_push(global.inputMouseY,mouse_y)
+	if mouse_check_button_pressed(1){
+		array_push(global.inputClickPress,1)
+	}
+	else{
+		array_push(global.inputClickPress,0)
+	}
+	if mouse_check_button(1){
+	array_push(global.inputClickHold,1)
+	}
+	else{
+	array_push(global.inputClickHold,0)
+	}
 }
 else{
-	global.input_list = []
+	global.inputX = []
+	global.inputY = []
+	global.inputMouseX = []
+	global.inputMouseY = []
 }
 
 if place_meeting(x,y,global.enemies) and invulnerable = 0{

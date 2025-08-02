@@ -10,3 +10,4 @@ changing = 0
 
 
 xacc=0.2
+invulnerable = 0

@@ -55,7 +55,7 @@ x+=xspd*bspeed
 y-=yspd*bspeed
 
 // Damage
-if place_meeting(x,y,oBullet) and global.killBullet = 0{
+if place_meeting(x,y,global.bullets) and global.killBullet = 0{
 	hp -= 1
 	global.killBullet = 1
 	if hp = 0 {
