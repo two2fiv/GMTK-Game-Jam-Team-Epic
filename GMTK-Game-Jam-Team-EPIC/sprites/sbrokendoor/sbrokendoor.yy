@@ -3,7 +3,7 @@
   "%Name":"sbrokendoor",
   "bboxMode":0,
   "bbox_bottom":63,
-  "bbox_left":25,
+  "bbox_left":54,
   "bbox_right":63,
   "bbox_top":0,
   "collisionKind":1,
