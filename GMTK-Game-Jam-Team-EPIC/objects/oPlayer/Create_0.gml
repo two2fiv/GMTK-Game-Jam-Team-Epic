@@ -101,7 +101,7 @@ function canWallJump(){
 		cnWlJmp = 1
 	}
 }
-
+/*
 function spriteGet(){
 	if global.hasWallJump+global.canGrapple = 0{
 	baseSprite = sPlayer
@@ -215,3 +215,4 @@ function spriteGet(){
 			}
 	}
 }
+*/

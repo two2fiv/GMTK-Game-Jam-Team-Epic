@@ -173,4 +173,4 @@ global.playerY = y
 
 }
 
-spriteGet()
+//spriteGet()
