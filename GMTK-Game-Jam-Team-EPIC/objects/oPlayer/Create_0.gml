@@ -106,78 +106,110 @@ function spriteGet(){
 	if global.hasWallJump+global.canGrapple = 0{
 	baseSprite = sPlayer
 	basehurtSprite = sPlayerHurt
-	walkSprite = sPlayerWalkingHurt
-	walkhurtSprite = sPlayerWalking
-	jumpuphurtSprite = sPlayerJumpUpHurt
-	jumpupSprite = sPlayerJumpUp
-	jumpdownSprite = sPlayerJumpDown
-	jumpdownhurtSprite = sPlayerJumpDownHurt
-	recordingSprite = sPlayerRecording
-	recordinghurtSprite = sPlayerRecordingHurt
+	walkSprite = sPlayerWalking
+	walkhurtSprite = sPlayerWalkingHurt
+	jumpuphurtSprite = sPlayerJumpHurt
+	jumpupSprite = sPlayerJump
+	recordingbaseSprite = sPlayer
+	recordingbasehurtSprite = sPlayerHurt
+	recordingwalkSprite = sPlayerWalkingHurt
+	recordingwalkhurtSprite = sPlayerWalking
+	recordingjumpuphurtSprite = sPlayerJumpHurt
+	recordingjumpupSprite = sPlayerJump
 	}
+	
+	if global.hasWallJump+global.canGrapple = 1{
+	baseSprite = sGrapple
+	basehurtSprite = sGrappleHurt
+	walkSprite = sGrappleWalkingHurt
+	walkhurtSprite = sGrappleWalking
+	jumpuphurtSprite = sGrappleJumpHurt
+	jumpupSprite = sGrappleJump
+	recordingbaseSprite = sGrappleRecording
+	recordingbasehurtSprite = sGrappleRecordingHurt
+	recordingwalkSprite = sGrappleRecordingWalkHurt
+	recordingwalkhurtSprite = sGrappleRecordingWalk
+	recordingjumpuphurtSprite = sGrappleRecordingJumpHurt
+	recordingjumpupSprite = sGrappleJump
+	}
+	
+	if global.hasWallJump+global.canGrapple = 2{
+	baseSprite = sWallJump
+	basehurtSprite = sWallJumpHurt
+	walkSprite = sWallJumpWalkHurt
+	walkhurtSprite = sWallJumpWalk
+	jumpuphurtSprite = sWallJumpJumpHurt
+	jumpupSprite = sWallJumpJump
+	recordingbaseSprite = sWallJumpRecord
+	recordingbasehurtSprite = sWallJumpRecordHurt
+	recordingwalkSprite = sWallJumpRecordWalkHurt
+	recordingwalkhurtSprite = sWallJumpRecordWalk
+	recordingjumpuphurtSprite = sWallJumpRecordJumpHurt
+	recordingjumpupSprite = sWallJumpRecordJump
+	}
+	
 	if global.inputRecording = 0{
-		if invulnerable = 0{
-			if abs(ysp) !=0.3{
-					sprite_index = jumpupSprite
-				}
-			}
-			else{
-				if xsp!=0{
-					sprite_index = walkSprite
-				}
-				else{
-					sprite_index = baseSprite	
-				}
-			}
-		}
-		else{
-			if abs(ysp) !=.3{
-					sprite_index = jumpuphurtSprite
+			if invulnerable = 0{
+				if abs(ysp) !=0.3{
+						sprite_index = jumpupSprite
 					}
 				else{
 					if xsp!=0{
-						sprite_index = walkhurtSprite
+						sprite_index = walkSprite
 					}
 					else{
-						sprite_index = basehurtSprite	
-					}	
+						sprite_index = baseSprite	
+					}
 				}
 			}
+			else{
+				if abs(ysp) !=.3{
+						sprite_index = jumpuphurtSprite
+						}
+					else{
+						if xsp!=0{
+							sprite_index = walkhurtSprite
+						}
+						else{
+							sprite_index = basehurtSprite	
+						}	
+					}
+				}
 	}
 	else{
 		if invulnerable = 0{
 			if abs(ysp) !=0.3{
 				if ysp < 0{
-					sprite_index = jumpupSprite
+					sprite_index = recordingjumpupSprite
 				}
 				else{
-					sprite_index = jumpdownSprite
+					sprite_index = recordingjumpdownSprite
 				}
 			}
 			else{
 				if xsp!=0{
-					sprite_index = walkSprite
+					sprite_index = recordingwalkSprite
 				}
 				else{
-					sprite_index = baseSprite	
+					sprite_index = recordingbaseSprite	
 				}
 			}
 		}
 		else{
 			if abs(ysp) !=.3{
 					if ysp < 0{
-					sprite_index = jumpuphurtSprite
+					sprite_index = recordingjumpuphurtSprite
 					}
 					else{
-					sprite_index = jumpdownhurtSprite
+					sprite_index = recordingjumpdownhurtSprite
 					}
 				}
 				else{
 					if xsp!=0{
-						sprite_index = walkhurtSprite
+						sprite_index = recordingwalkhurtSprite
 					}
 					else{
-						sprite_index = basehurtSprite	
+						sprite_index = recordingbasehurtSprite	
 					}	
 				}
 			}

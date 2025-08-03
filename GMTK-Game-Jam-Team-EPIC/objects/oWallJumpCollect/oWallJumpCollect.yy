@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sWallJumpCollect",
-    "path":"sprites/sWallJumpCollect/sWallJumpCollect.yy",
+    "name":"sWallCollect",
+    "path":"sprites/sWallCollect/sWallCollect.yy",
   },
   "spriteMaskId":null,
   "visible":true,
