@@ -54,8 +54,9 @@ global.inputMouseY = []
 global.inputClickPress = []
 global.inputClickHold = []
 global.playerHP = 8
-global.spawnpoint = 1
-
+if( !variable_global_exists("spawnpoint")){
+	global.spawnpoint = 1
+}
 global.killBullet = 0
 
 global.cloneCount = 0

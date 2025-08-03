@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"startbutton",
+  "%Name":"room17change2",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":13,"eventType":5,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"startbutton",
+  "name":"room17change2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Title Screen",
-    "path":"folders/Title Screen.yy",
+    "name":"room9_17",
+    "path":"folders/Rooms/room9_17.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sstartbutton",
-    "path":"sprites/sstartbutton/sstartbutton.yy",
+    "name":"skillblock",
+    "path":"sprites/skillblock/skillblock.yy",
   },
   "spriteMaskId":null,
   "visible":true,

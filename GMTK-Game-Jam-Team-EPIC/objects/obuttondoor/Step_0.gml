@@ -1,4 +1,4 @@
-if place_meeting(odoor.x,odoor.y,global.bullets) and global.lockeddoors = 0{
+if place_meeting(obuttondoor.x,obuttondoor.y,global.bullets) and global.lockeddoors = 0{
 	sprite_index = sdooropen
 	open = true
 	alarm[0] = 60
@@ -14,4 +14,3 @@ if global.lockeddoors = 1 and not instance_exists(oCloneBoss) {
 	global.lockeddoors = 0
 	sprite_index = sdoor
 }
-

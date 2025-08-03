@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sfxDoorClose.wav",
   "type":0,
-  "volume":1.0,
+  "volume":0.0,
 }

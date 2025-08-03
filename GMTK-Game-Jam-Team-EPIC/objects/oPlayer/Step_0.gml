@@ -184,7 +184,7 @@ if place_meeting(x,y, roomchangeback)
 
 if place_meeting(x,y,okillblock)
 {
-	global.playerHP = 0
+	room_restart()
 }
 
 global.playerX = x
