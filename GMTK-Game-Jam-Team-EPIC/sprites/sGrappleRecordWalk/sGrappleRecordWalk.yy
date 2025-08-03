@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"sGrappleRecordWalk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":85,
   "bbox_left":0,
   "bbox_right":27,
-  "bbox_top":14,
+  "bbox_top":23,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

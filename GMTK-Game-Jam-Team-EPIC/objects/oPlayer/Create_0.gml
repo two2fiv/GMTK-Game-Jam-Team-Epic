@@ -106,8 +106,8 @@ function spriteGet(){
 	if global.hasWallJump+global.canGrapple = 0{
 	baseSprite = sPlayer
 	basehurtSprite = sPlayerHurt
-	walkSprite = sPlayerWalk
-	walkhurtSprite = sPlayerWalkHurt
+	walkSprite = sPlayerWalkingHurt
+	walkhurtSprite = sPlayerWalking
 	jumpuphurtSprite = sPlayerJumpUpHurt
 	jumpupSprite = sPlayerJumpUp
 	jumpdownSprite = sPlayerJumpDown
@@ -118,11 +118,7 @@ function spriteGet(){
 	if global.inputRecording = 0{
 		if invulnerable = 0{
 			if abs(ysp) !=0.3{
-				if ysp < 0{
 					sprite_index = jumpupSprite
-				}
-				else{
-					sprite_index = jumpdownSprite
 				}
 			}
 			else{
@@ -136,13 +132,8 @@ function spriteGet(){
 		}
 		else{
 			if abs(ysp) !=.3{
-					if ysp < 0{
 					sprite_index = jumpuphurtSprite
 					}
-					else{
-					sprite_index = jumpdownhurtSprite
-					}
-				}
 				else{
 					if xsp!=0{
 						sprite_index = walkhurtSprite
