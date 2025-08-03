@@ -1,7 +1,7 @@
-global.canGrapple = 0
+global.canGrapple = 1
 global.hasGun = 1
-global.hasWallJump = 0
-global.canClone = 1
+global.hasWallJump = 1
+global.canClone = 0
 global.bulletIdx = 0
 global.playerHP = 8
 

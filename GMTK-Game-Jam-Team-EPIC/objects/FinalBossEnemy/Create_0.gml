@@ -1,5 +1,6 @@
-global.bossHP = 1
+global.bossHP = 255
 global.bossAtk = 1
+global.spawnpoint = 4
 phase = 1
 atk = 0
 patk = 0

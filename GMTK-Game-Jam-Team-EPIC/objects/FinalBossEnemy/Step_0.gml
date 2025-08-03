@@ -8,8 +8,8 @@ if global.bossAtk = 1{
 if global.bossHP <= 0 {
 	global.canMove = 0	
 	
-	image_xscale*=1.03
-	image_yscale*=1.03
+	image_xscale*=1.034
+	image_yscale*=1.034
 	audio_stop_all()
 	if alarm[2] = -1{
 		sprite_index = sFinalBossExploding
