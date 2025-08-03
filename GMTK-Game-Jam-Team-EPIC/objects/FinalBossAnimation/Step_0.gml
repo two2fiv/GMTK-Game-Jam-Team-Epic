@@ -1,5 +1,6 @@
 if AnimatedPlayerFirstFight.state == 3 and phase == 0{
-phase+=1	
+	phase+=1	
+	audio_play_sound(GroundShakeBoss,1,0)
 }
 if wait = 0{
 	if AnimatedPlayerFirstFight.state == 3{

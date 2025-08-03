@@ -21,7 +21,7 @@ if instance_exists(oCloneBoss){
 
 		if canFire{
 			instance_create_layer(x,y,"Enemies",oCloneBossBullet)
-			audio_play_sound(sfxGunfired,1,0)
+			audio_play_sound(sfxEnemyGunfired,1,0)
 			canFire = false
 			alarm[0] = 50
 		}

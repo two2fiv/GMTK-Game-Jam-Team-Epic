@@ -1,5 +1,5 @@
 global.canGrapple = 1
-global.hasGun = 2
+global.hasGun = 1
 global.hasWallJump = 1
 global.canClone = 1
 global.bulletIdx = 0

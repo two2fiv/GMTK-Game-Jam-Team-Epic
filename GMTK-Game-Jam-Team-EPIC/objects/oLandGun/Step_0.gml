@@ -21,7 +21,7 @@ if instance_exists(oLandWeapon1){
 
 		if dis<range and canFire{
 			instance_create_layer(x,y,"weapons",oLandWeaponBullet)
-			audio_play_sound(sfxGunfired,1,0)
+			audio_play_sound(sfxEnemyGunfired,1,0)
 			canFire = false
 			alarm[0] = 50
 		}

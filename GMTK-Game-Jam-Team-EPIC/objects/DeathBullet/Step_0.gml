@@ -23,3 +23,12 @@ if place_meeting(x,y,AnimatedBullet) and atk = 0{
 		atk = 1
 	}
 }
+
+if place_meeting(x,y,AnimatedPlayerFirstFight) and image_xscale <=50{
+	image_xscale *=1.2
+	image_yscale*=1.2
+	if image_xscale > 50{
+		alarm[0] = 10
+		image_blend = c_white
+	}
+}
