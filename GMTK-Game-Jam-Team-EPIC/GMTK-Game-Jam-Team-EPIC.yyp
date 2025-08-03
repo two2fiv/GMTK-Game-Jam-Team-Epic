@@ -199,6 +199,7 @@
     {"id":{"name":"MiniMapPointer","path":"sprites/MiniMapPointer/MiniMapPointer.yy",},},
     {"id":{"name":"MinMap_1","path":"sprites/MinMap_1/MinMap_1.yy",},},
     {"id":{"name":"MinMap","path":"sprites/MinMap/MinMap.yy",},},
+    {"id":{"name":"pedastal","path":"sprites/pedastal/pedastal.yy",},},
     {"id":{"name":"Player","path":"sprites/Player/Player.yy",},},
     {"id":{"name":"PlayerArmDown","path":"sprites/PlayerArmDown/PlayerArmDown.yy",},},
     {"id":{"name":"PlayerHead","path":"sprites/PlayerHead/PlayerHead.yy",},},

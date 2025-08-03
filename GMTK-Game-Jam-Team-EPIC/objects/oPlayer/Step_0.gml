@@ -73,20 +73,22 @@ xsp*=pFriction
 if keyboard_check(vk_space) and global.canClone{
 	if spaceHeld = 0{
 		if global.inputRecording == 0{
+			sprite_index = sPlayerRecording
 			global.inputRecording = 1
 			global.initialX = x
 			global.initialY = y
 			global.initialYsp = ysp
 			global.initialXsp = xsp
 			spaceHeld = 1
-			nextSprite = sPlayerRecording
+			
 		}
 		else{
+			sprite_index = sPlayer
 			global.inputRecording = 0
 			instance_create_layer(global.initialX,global.initialY,"player",oClone)
 			instance_create_layer(global.initialX,global.initialY,"Weapons",oGunClone)
 			spaceHeld = 1
-			nextSprite = sPlayer
+			
 		}
 	}
 }
