@@ -1,5 +1,5 @@
-x = AnimatedPlayerFirstFight.x+16
-y = AnimatedPlayerFirstFight.y+15
+x = AnimatedPlayerFirstFight.x
+y = AnimatedPlayerFirstFight.y-15
 
 rbx = 0
 rby = 0

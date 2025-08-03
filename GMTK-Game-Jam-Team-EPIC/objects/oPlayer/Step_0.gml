@@ -30,7 +30,6 @@ if global.hasGun > 0{
 	}
 }
 
-
 move_and_collide(xsp,ysp,global.solids)
 
 if place_meeting(x,y+abs(ysp),global.solids) or place_meeting(x,y-abs(ysp),global.solids)
@@ -74,27 +73,15 @@ xsp*=pFriction
 if keyboard_check(vk_space) and global.canClone{
 	if spaceHeld = 0{
 		if global.inputRecording == 0{
-			if sprite_index == sPlayer{
-				sprite_index = sRecording
-			}
-			else{
-				sprite_index = sRecordingHurt	
-			}
 			global.inputRecording = 1
 			global.initialX = x
 			global.initialY = y
 			global.initialYsp = ysp
 			global.initialXsp = xsp
 			spaceHeld = 1
-			nextSprite = sRecording
+			nextSprite = sPlayerRecording
 		}
 		else{
-			if sprite_index == sRecording{
-			sprite_index = sPlayer
-			}
-			else{
-			sprite_index = sPlayerHurt	
-			}
 			global.inputRecording = 0
 			instance_create_layer(global.initialX,global.initialY,"player",oClone)
 			instance_create_layer(global.initialX,global.initialY,"Weapons",oGunClone)
@@ -140,7 +127,7 @@ if place_meeting(x,y,global.enemies) and invulnerable = 0{
 	sprite_index = sPlayerHurt
 	}
 	else{
-	sprite_index = sRecordingHurt
+	sprite_index = sPlayerRecordingHurt
 	}
 	audio_play_sound(sfxLooperhit,1,0)
 }
@@ -151,22 +138,14 @@ if not invulnerable = 0{
 			sprite_index = sPlayer
 		}
 		else{
-			sprite_index = sRecording
+			sprite_index = sPlayerRecording
 		}
 	}
 }
 
-if global.playerHP <= 0 {
-	if global.spawnpoint = 1{
-		room_goto(Room1)
-	}
-	if global.spawnpoint = 2{
-		room_goto(Room5)
-	}
-	if global.spawnpoint = 3{
-		room_goto(Room11)
-	}
-	global.playerHP = 8
+if global.playerHP <= 1 {
+	global.animate = 1
+	room_goto(PlayAnimations)
 }
 
 if place_meeting(x,y, roomchange)
@@ -184,6 +163,8 @@ if place_meeting(x,y, roomchangeback)
 
 if place_meeting(x,y,okillblock)
 {
+	audio_play_sound(sfxLooperhit,1,0)
+	global.playerHP -=2
 	room_restart()
 }
 
@@ -191,3 +172,5 @@ global.playerX = x
 global.playerY = y
 
 }
+
+spriteGet()

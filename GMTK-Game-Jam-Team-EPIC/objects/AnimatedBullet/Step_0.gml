@@ -7,6 +7,6 @@ rix = x-initialX
 riy = y-initialY
 initdist = sqrt(riy*riy+rix*rix)
 
-if place_meeting(x,y,DeathBullet){
+if place_meeting(x,y,DeathBulletAnimation){
 	instance_destroy()
 }

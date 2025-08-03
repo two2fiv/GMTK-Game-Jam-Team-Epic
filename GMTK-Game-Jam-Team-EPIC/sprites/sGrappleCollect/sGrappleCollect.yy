@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Player",
-    "path":"folders/sprites/Player.yy",
+    "name":"Grapple",
+    "path":"folders/sprites/Player/Grapple.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

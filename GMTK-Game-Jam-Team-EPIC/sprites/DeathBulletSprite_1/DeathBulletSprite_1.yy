@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"FinalBoss",
-    "path":"folders/FirstFightAnimation/FinalBoss.yy",
+    "path":"folders/Animations/FirstFightAnimation/FinalBoss.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

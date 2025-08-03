@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"FinalBossPlaceHolder",
   "bboxMode":0,
-  "bbox_bottom":255,
+  "bbox_bottom":253,
   "bbox_left":0,
   "bbox_right":159,
   "bbox_top":0,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"4e3a2ac6-ff5c-463a-a240-f56b9526af46","name":"4e3a2ac6-ff5c-463a-a240-f56b9526af46","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"e8cce7cc-db81-49bd-b19e-d6905ffd18ad","name":"e8cce7cc-db81-49bd-b19e-d6905ffd18ad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":256,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"8725fb8b-1e6b-4ede-af57-325de059495e","blendMode":0,"displayName":"default","isLocked":false,"name":"8725fb8b-1e6b-4ede-af57-325de059495e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"38bd3d20-79b2-4b72-a51f-b22323bb24ce","blendMode":0,"displayName":"default","isLocked":false,"name":"38bd3d20-79b2-4b72-a51f-b22323bb24ce","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"FinalBossPlaceHolder",
   "nineSlice":null,
   "origin":0,
   "parent":{
     "name":"FinalBoss",
-    "path":"folders/FirstFightAnimation/FinalBoss.yy",
+    "path":"folders/Animations/FirstFightAnimation/FinalBoss.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4e3a2ac6-ff5c-463a-a240-f56b9526af46","path":"sprites/FinalBossPlaceHolder/FinalBossPlaceHolder.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7bc5c254-d057-48b2-a184-0f726173b711","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e8cce7cc-db81-49bd-b19e-d6905ffd18ad","path":"sprites/FinalBossPlaceHolder/FinalBossPlaceHolder.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d107b03f-249a-4132-b209-939239398719","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

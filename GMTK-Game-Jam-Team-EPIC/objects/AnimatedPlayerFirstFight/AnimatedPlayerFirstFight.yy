@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
-    "path":"folders/FirstFightAnimation/Player.yy",
+    "path":"folders/Animations/FirstFightAnimation/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,

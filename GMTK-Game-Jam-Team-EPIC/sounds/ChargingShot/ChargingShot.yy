@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"ChargingShot",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":3.4249432,
+  "name":"ChargingShot",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Animations/FirstFightAnimation/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ChargingShot.wav",
+  "type":0,
+  "volume":1.0,
+}

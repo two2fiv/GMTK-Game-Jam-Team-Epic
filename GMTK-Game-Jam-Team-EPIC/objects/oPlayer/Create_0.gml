@@ -3,7 +3,7 @@ xsp=0
 ysp=0
 
 
-
+instance_create_depth(x,y,0,Health)
 
 canJump = false
 
@@ -53,7 +53,6 @@ global.inputMouseX = []
 global.inputMouseY = []
 global.inputClickPress = []
 global.inputClickHold = []
-global.playerHP = 8
 if( !variable_global_exists("spawnpoint")){
 	global.spawnpoint = 1
 }
@@ -61,6 +60,8 @@ global.killBullet = 0
 
 global.cloneCount = 0
 global.cloneGunCount = 0
+global.buttonGoal = 0
+global.buttonsDown = 0
 
 w = 0
 
@@ -98,5 +99,96 @@ function canWallJump(){
 	if left+right != 0 and canJump != 1{
 		
 		cnWlJmp = 1
+	}
+}
+
+function spriteGet(){
+	if global.hasWallJump+global.canGrapple = 0{
+	baseSprite = sPlayer
+	basehurtSprite = sPlayerHurt
+	walkSprite = sPlayerWalk
+	walkhurtSprite = sPlayerWalkHurt
+	jumpuphurtSprite = sPlayerJumpUpHurt
+	jumpupSprite = sPlayerJumpUp
+	jumpdownSprite = sPlayerJumpDown
+	jumpdownhurtSprite = sPlayerJumpDownHurt
+	recordingSprite = sPlayerRecording
+	recordinghurtSprite = sPlayerRecordingHurt
+	}
+	if global.inputRecording = 0{
+		if invulnerable = 0{
+			if abs(ysp) !=0.3{
+				if ysp < 0{
+					sprite_index = jumpupSprite
+				}
+				else{
+					sprite_index = jumpdownSprite
+				}
+			}
+			else{
+				if xsp!=0{
+					sprite_index = walkSprite
+				}
+				else{
+					sprite_index = baseSprite	
+				}
+			}
+		}
+		else{
+			if abs(ysp) !=.3{
+					if ysp < 0{
+					sprite_index = jumpuphurtSprite
+					}
+					else{
+					sprite_index = jumpdownhurtSprite
+					}
+				}
+				else{
+					if xsp!=0{
+						sprite_index = walkhurtSprite
+					}
+					else{
+						sprite_index = basehurtSprite	
+					}	
+				}
+			}
+	}
+	else{
+		if invulnerable = 0{
+			if abs(ysp) !=0.3{
+				if ysp < 0{
+					sprite_index = jumpupSprite
+				}
+				else{
+					sprite_index = jumpdownSprite
+				}
+			}
+			else{
+				if xsp!=0{
+					sprite_index = walkSprite
+				}
+				else{
+					sprite_index = baseSprite	
+				}
+			}
+		}
+		else{
+			if abs(ysp) !=.3{
+					if ysp < 0{
+					sprite_index = jumpuphurtSprite
+					}
+					else{
+					sprite_index = jumpdownhurtSprite
+					}
+				}
+				else{
+					if xsp!=0{
+						sprite_index = walkhurtSprite
+					}
+					else{
+						sprite_index = basehurtSprite	
+					}	
+				}
+			}
 	}
 }

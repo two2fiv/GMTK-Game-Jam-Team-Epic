@@ -44,8 +44,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"FirstFightAnimation",
-    "path":"folders/FirstFightAnimation.yy",
+    "name":"Animations",
+    "path":"folders/Animations.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -5,7 +5,7 @@ else{
 sprite_index = sBeegGun	
 }
 set = 0
-gangle = arctan2(x-577,y-44)
+gangle = arctan2(x-485,y-106)
 gangle = (radtodeg(gangle)+90)
 
 

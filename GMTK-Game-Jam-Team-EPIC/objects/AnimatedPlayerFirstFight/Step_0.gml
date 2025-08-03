@@ -23,7 +23,7 @@ if wait = 0{
 	if FinalBossAnimation.phase == 3{
 		sprite_index = HeadlessPlayer
 		if !instance_exists(AnimatedGun){
-			instance_create_depth(186,324,350,AnimatedGun)	
+			instance_create_depth(172,324,350,AnimatedGun)	
 		}
 	}
 }

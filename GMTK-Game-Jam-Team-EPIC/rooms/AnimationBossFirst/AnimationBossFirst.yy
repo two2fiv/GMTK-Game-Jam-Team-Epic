@@ -141,8 +141,8 @@
   ],
   "name":"AnimationBossFirst",
   "parent":{
-    "name":"FirstFightAnimation",
-    "path":"folders/FirstFightAnimation.yy",
+    "name":"Animations",
+    "path":"folders/Animations.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

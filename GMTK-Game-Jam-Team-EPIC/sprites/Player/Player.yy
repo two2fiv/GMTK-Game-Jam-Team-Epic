@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Player",
-    "path":"folders/FirstFightAnimation/Player.yy",
+    "path":"folders/Animations/FirstFightAnimation/Player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

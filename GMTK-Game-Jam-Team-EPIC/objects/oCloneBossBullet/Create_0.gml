@@ -1,5 +1,5 @@
 
-bspeed=4
+bspeed=8
 angle = oCloneBossGun.angle
 
 xspd=cos(degtorad(angle))*bspeed

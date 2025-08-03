@@ -10,8 +10,6 @@ if instance_exists(oCloneBoss) {
 	sprite_index = slockeddoor
 }
 
-if global.lockeddoors = 1 and not instance_exists(oCloneBoss) {
-	global.lockeddoors = 0
+if global.canClone = 1 and sprite_index = slockeddoor {
 	sprite_index = sdoor
 }
-

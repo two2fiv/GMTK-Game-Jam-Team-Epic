@@ -1,0 +1,1 @@
+global.bossAtk = 1

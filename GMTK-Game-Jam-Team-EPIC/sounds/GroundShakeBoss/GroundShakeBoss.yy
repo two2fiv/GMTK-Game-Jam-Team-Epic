@@ -9,11 +9,11 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":3.0857823,
+  "duration":3.0169613,
   "name":"GroundShakeBoss",
   "parent":{
     "name":"Sounds",
-    "path":"folders/FirstFightAnimation/Sounds.yy",
+    "path":"folders/Animations/FirstFightAnimation/Sounds.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

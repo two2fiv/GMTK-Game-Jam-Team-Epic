@@ -35,18 +35,21 @@ if global.canMove = 1{
 		
 	}
 	
-			if place_meeting(x,y,global.bullets) and invulnerable = 0{
+			if place_meeting(x,y,global.bullets) and global.killBullet = 0 and invulnerable = 0{
 				hp -= 1
 				invulnerable = 15
-				if hp == 0{
-					audio_play_sound(sfxKillEnemy,1,0)
-				instance_destroy()	
+				global.killBullet = 1
+				if hp = 0 {
+				audio_play_sound(sfxKillEnemy,1,0)	
+				instance_destroy()
 				}
-				audio_play_sound(sfxLooperhit,1,0)
+				else{
+				audio_play_sound(sfxEnemyDamage,1,0)
+				}
 			}
-			if not invulnerable = 0{
+			if invulnerable != 0{
 				invulnerable -=1	
-				}
 			}
 			
 
+}

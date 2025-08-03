@@ -23,6 +23,7 @@ if wait = 0{
 			}
 			if pauseHeight > -201{
 				phase += 1	
+				audio_play_sound(BossDrop,1,0)
 			}
 		}
 		if phase == 2{

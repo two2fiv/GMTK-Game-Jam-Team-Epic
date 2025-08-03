@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"FinalBoss",
-    "path":"folders/FirstFightAnimation/FinalBoss.yy",
+    "path":"folders/Animations/FirstFightAnimation/FinalBoss.yy",
   },
   "parentObjectId":null,
   "persistent":false,

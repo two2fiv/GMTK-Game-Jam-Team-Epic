@@ -1,5 +1,9 @@
-if place_meeting(overtbuttondoor.x,overtbuttondoor.y,global.bullets){
+if global.buttonGoal = global.buttonsDown{
 	sprite_index = svertdooropen
 	open = true
-	alarm[0] = 60
+	audio_play_sound(sfxDoorOpen,1,0)
+}
+else{
+open = false
+sprite_index = svertdoor	
 }
