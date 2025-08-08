@@ -10,7 +10,7 @@ global.buttonGoal = 0
 
 global.canMove = 1
 
-global.solids = [odoor, oSolid, overtdoor, odoor2, osuperdoor, osupervertdoor, obuttondoor, overtbuttondoor]
+global.solids = [odoor, oSolid, overtdoor, odoor2, osuperdoor, osupervertdoor, obuttondoor, overtbuttondoor,oSolid_1]
 global.enemies = [oAir1, oLandCrawler1, oLavaCrawler, oLandCrawler2,oLandWeaponBullet,oLandWeapon1,oCloneBoss,oCloneBossBullet,DeathBullet,FinalBossEnemy,oFinalBossBullet]
 global.players = [oClone, oPlayer]
 global.bullets = [oBullet, oBulletClone]

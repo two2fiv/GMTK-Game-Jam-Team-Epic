@@ -99,7 +99,7 @@ if global.canMove = 1{
 		xsp*=.6
 }
 
-			if place_meeting(x,y,global.bullets) and global.killBullet = 0 and invulnerable = 0{
+			if place_meeting(x,y,global.bullets) and global.killBullet = 0 and invulnerable = 0 or place_meeting(x,y,okillblock) and global.killBullet = 0 and invulnerable = 0{
 				hp -= 1
 				invulnerable = 15
 				global.killBullet = 1

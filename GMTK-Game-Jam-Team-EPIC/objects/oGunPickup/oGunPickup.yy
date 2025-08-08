@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sGunPickup",
+    "path":"sprites/sGunPickup/sGunPickup.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

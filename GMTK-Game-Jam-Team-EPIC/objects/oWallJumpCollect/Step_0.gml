@@ -17,10 +17,6 @@ if global.hasWallJump == 0{
 		instance_create_layer(x,y,"Pickups",oHalo)
 	}
 }
-/*if global.canMove = 1 and global.hasWallJump = 1{
-	image_yscale = 1
-	image_xscale = 1
-	x=oPlayer.x+oPlayer.xsp
-	y=oPlayer.y-33+oPlayer.ysp
+else{
+instance_destroy()	
 }
-*/

@@ -159,8 +159,10 @@
   "isDnd":false,
   "layers":[
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":16,"SerialiseWidth":32,"TileCompressedData":[
-          -321,-2147483648,-6,3,-4,2,-12,3,-2,2,-4,3,-2,2,-2,-2147483648,-30,3,-2,-2147483648,-30,3,-2,-2147483648,
-          -30,3,-2,-2147483648,-30,3,-33,-2147483648,
+          -61,-2147483648,-2,1,-30,-2147483648,-2,1,-30,-2147483648,-2,1,-30,-2147483648,-2,1,-30,-2147483648,
+          -2,1,-30,-2147483648,-2,1,-30,-2147483648,-2,1,-30,-2147483648,-2,1,-30,-2147483648,-2,1,-2,-2147483648,
+          -6,3,-4,2,-12,3,-2,2,-6,3,-2,-2147483648,-30,3,-2,-2147483648,-30,3,-2,-2147483648,-30,3,-2,-2147483648,
+          -30,3,-33,-2147483648,
         ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Pickups","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v2","%Name":"inst_A433FD7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_A433FD7","objectId":{"name":"oLandWeapon1","path":"objects/oLandWeapon1/oLandWeapon1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":256.0,},
