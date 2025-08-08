@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sdoor",
-    "path":"sprites/sdoor/sdoor.yy",
+    "name":"sbuttondoor",
+    "path":"sprites/sbuttondoor/sbuttondoor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

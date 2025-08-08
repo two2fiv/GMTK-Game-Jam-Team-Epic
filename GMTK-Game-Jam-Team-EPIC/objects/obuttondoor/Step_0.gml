@@ -5,5 +5,5 @@ if global.buttonGoal = global.buttonsDown{
 }
 else{
 open = false
-sprite_index = sdoor
+sprite_index = sbuttondoor
 }
